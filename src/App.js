@@ -36,7 +36,6 @@ export default class App extends React.Component {
 						<h5>Игрок 1</h5>
 						<Timer minutes={90}
 							isActive={this.state.isFirstTimerActive}
-							isResetTimer={this.state.isResetTimers}
 							callback={() => {
 								this.setState({
 									isFirstTimerActive: false,
@@ -49,7 +48,6 @@ export default class App extends React.Component {
 						<h5>Игрок 2</h5>
 						<Timer minutes={90}
 							isActive={this.state.isSecondTimerActive}
-							isResetTimer={this.state.isResetTimers}
 							callback={() => {
 								this.setState({
 									isFirstTimerActive: true,
